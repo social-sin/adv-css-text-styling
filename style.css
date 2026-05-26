@@ -1,0 +1,192 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fef6e4;
+  color: #172c66;
+
+  margin: 0;
+  padding: 40px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1 {
+  text-align: center;
+  color: green;
+  font-size: 3rem;
+}
+
+h2 {
+  color: green;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+/* =========================
+   CARD LAYOUT
+========================= */
+
+.card {
+  background-color: white;
+
+  padding: 30px;
+  margin-bottom: 30px;
+
+  border: 3px solid #172c66;
+  border-radius: 12px;
+}
+
+/* =========================
+   COLUMNS
+========================= */
+
+.columns {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   LIST STYLE TYPES
+========================= */
+
+.square-list {
+  list-style-type: square;
+  line-height: 1.8;
+}
+
+.roman-list {
+  list-style-type: upper-roman;
+  line-height: 1.8;
+}
+
+/* =========================
+   LIST POSITION
+========================= */
+
+.outside {
+  list-style-position: outside;
+  width: 250px;
+}
+
+.inside {
+  list-style-position: inside;
+  width: 250px;
+}
+
+/* =========================
+   EMOJI BULLETS
+========================= */
+
+.emoji-list {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+.emoji-list li {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.emoji-list li::before {
+  content: "★";
+
+  color: black;
+  font-weight: bold;
+
+  position: absolute;
+  left: -1.25rem;
+}
+
+/* =========================
+   FONT AWESOME ICON LIST
+========================= */
+
+.icon-list {
+  list-style: none;
+  padding-left: 1.8rem;
+}
+
+.icon-list li {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.icon-list li::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+
+  font-weight: 900;
+  color: #2ecc71;
+
+  position: absolute;
+  left: -1.5rem;
+}
+
+/* =========================
+   NAVIGATION LIST
+========================= */
+
+.nav-list {
+  list-style: none;
+
+  display: flex;
+  gap: 1.5rem;
+
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #172c66;
+
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-list a:hover {
+  color: green;
+}
+
+/* =========================
+   INLINE BREADCRUMB LIST
+========================= */
+
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li::after {
+  content: " / ";
+  color: #888;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}

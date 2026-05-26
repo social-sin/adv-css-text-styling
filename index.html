@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Advanced CSS List Styling</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
+      <!-- Font Awesome Icons -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      />
+   </head>
+<body>
+
+  <header>
+    <h1>Advanced CSS List Styling</h1>
+    <p>
+      Exploring custom bullets, spacing, navigation lists,
+      pseudo-elements, and list layout techniques.
+    </p>
+  </header>
+
+  <!-- DEFAULT LIST TYPES -->
+  <section class="card">
+    <h2>List Style Types</h2>
+
+    <div class="columns">
+
+      <div>
+        <h3>Unordered List</h3>
+
+        <ul class="square-list">
+          <li>Typography</li>
+          <li>Color Theory</li>
+          <li>Composition</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Ordered List</h3>
+
+        <ol class="roman-list">
+          <li>Research</li>
+          <li>Sketches</li>
+          <li>Final Design</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INSIDE VS OUTSIDE -->
+  <section class="card">
+    <h2>list-style-position</h2>
+
+    <div class="columns">
+
+      <div>
+        <h3>Outside (default)</h3>
+
+        <ul class="outside">
+          <li>
+            This bullet stays outside the text block and improves readability.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Inside</h3>
+
+        <ul class="inside">
+          <li>
+            This bullet aligns inside the content area for compact layouts.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUSTOM EMOJI BULLETS -->
+  <section class="card">
+    <h2>Custom Emoji Bullets</h2>
+
+    <ul class="emoji-list">
+      <li>Custom bullets with ::before</li>
+      <li>More styling control</li>
+      <li>Can animate or change color</li>
+      <li>Works better than list-style-image</li>
+    </ul>
+  </section>
+
+  <!-- FONT AWESOME ICONS -->
+  <section class="card">
+    <h2>Font Awesome Icon Bullets</h2>
+
+    <ul class="icon-list">
+      <li>Accessible navigation</li>
+      <li>Responsive layout systems</li>
+      <li>Modern UI styling</li>
+      <li>Interactive components</li>
+    </ul>
+  </section>
+
+  <!-- NAVIGATION LIST -->
+  <section class="card">
+    <h2>Horizontal Navigation List</h2>
+
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- INLINE LIST -->
+  <section class="card">
+    <h2>Inline Breadcrumb List</h2>
+
+    <ul class="breadcrumb">
+      <li>Home</li>
+      <li>Courses</li>
+      <li>Web Design</li>
+      <li>CSS Lists</li>
+    </ul>
+  </section>
+
+</body>
+</html>
