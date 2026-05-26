@@ -3,131 +3,122 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Advanced CSS List Styling</title>
+      <title>Advanced CSS Text Styling</title>
       <link rel="stylesheet" href="style.css">
       <script src="script.js" defer></script>
-      <!-- Font Awesome Icons -->
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      />
    </head>
 <body>
 
-  <header>
-    <h1>Advanced CSS List Styling</h1>
-    <p>
-      Exploring custom bullets, spacing, navigation lists,
-      pseudo-elements, and list layout techniques.
+ <header>
+    <h1 class="shadow-title">Advanced CSS Text Styling</h1>
+
+    <p class="intro">
+      Explore alignment, spacing, decoration, transformations,
+      overflow handling, and modern text effects.
     </p>
   </header>
 
-  <!-- DEFAULT LIST TYPES -->
+  <!-- TEXT ALIGNMENT -->
   <section class="card">
-    <h2>List Style Types</h2>
+    <h2>Text Alignment</h2>
 
-    <div class="columns">
+    <p class="left">
+      Left aligned text is the default for most websites.
+    </p>
 
-      <div>
-        <h3>Unordered List</h3>
+    <p class="center">
+      Center aligned text is common for headings and hero sections.
+    </p>
 
-        <ul class="square-list">
-          <li>Typography</li>
-          <li>Color Theory</li>
-          <li>Composition</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Ordered List</h3>
-
-        <ol class="roman-list">
-          <li>Research</li>
-          <li>Sketches</li>
-          <li>Final Design</li>
-        </ol>
-      </div>
-
-    </div>
+    <p class="justify">
+      Justified text aligns evenly on both sides of the container,
+      creating a print-style appearance often used in magazines,
+      newspapers, and long-form editorial layouts.
+    </p>
   </section>
 
-  <!-- INSIDE VS OUTSIDE -->
+  <!-- TEXT DECORATION -->
   <section class="card">
-    <h2>list-style-position</h2>
+    <h2>Text Decoration</h2>
 
-    <div class="columns">
+    <a href="#" class="underline-link">Underline Link</a>
 
-      <div>
-        <h3>Outside (default)</h3>
+    <a href="#" class="dashed-link">Dashed Underline</a>
 
-        <ul class="outside">
-          <li>
-            This bullet stays outside the text block and improves readability.
-          </li>
-        </ul>
-      </div>
+    <a href="#" class="wavy-link">Wavy Underline</a>
 
-      <div>
-        <h3>Inside</h3>
-
-        <ul class="inside">
-          <li>
-            This bullet aligns inside the content area for compact layouts.
-          </li>
-        </ul>
-      </div>
-
-    </div>
+    <p class="line-through">
+      This paragraph uses a line-through effect.
+    </p>
   </section>
 
-  <!-- CUSTOM EMOJI BULLETS -->
+  <!-- TEXT TRANSFORM -->
   <section class="card">
-    <h2>Custom Emoji Bullets</h2>
+    <h2>Text Transform</h2>
 
-    <ul class="emoji-list">
-      <li>Custom bullets with ::before</li>
-      <li>More styling control</li>
-      <li>Can animate or change color</li>
-      <li>Works better than list-style-image</li>
-    </ul>
+    <p class="uppercase">uppercase text transformation</p>
+
+    <p class="lowercase">LOWERCASE TEXT TRANSFORMATION</p>
+
+    <p class="capitalize">capitalize each word automatically</p>
   </section>
 
-  <!-- FONT AWESOME ICONS -->
+  <!-- SPACING -->
   <section class="card">
-    <h2>Font Awesome Icon Bullets</h2>
+    <h2>Spacing & Indentation</h2>
 
-    <ul class="icon-list">
-      <li>Accessible navigation</li>
-      <li>Responsive layout systems</li>
-      <li>Modern UI styling</li>
-      <li>Interactive components</li>
-    </ul>
+    <p class="spacing-demo">
+      Good typography improves readability. Letter spacing,
+      word spacing, line height, and indentation all help
+      organize text visually and make long paragraphs easier
+      to read across different screen sizes.
+    </p>
   </section>
 
-  <!-- NAVIGATION LIST -->
+  <!-- TEXT OVERFLOW -->
   <section class="card">
-    <h2>Horizontal Navigation List</h2>
+    <h2>Text Overflow & Wrapping</h2>
 
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <p class="truncate">
+      This is an example of very long text content that does not fit inside
+      the container width and therefore becomes truncated with an ellipsis.
+    </p>
   </section>
 
-  <!-- INLINE LIST -->
+  <!-- VERTICAL ALIGN -->
   <section class="card">
-    <h2>Inline Breadcrumb List</h2>
+    <h2>Vertical Alignment</h2>
 
-    <ul class="breadcrumb">
-      <li>Home</li>
-      <li>Courses</li>
-      <li>Web Design</li>
-      <li>CSS Lists</li>
-    </ul>
+    <p>
+      Text
+      <img
+        src="https://via.placeholder.com/40"
+        alt="placeholder"
+        class="middle-align"
+      />
+      aligned with middle vertical alignment.
+    </p>
+
+    <p>
+      Text
+      <img
+        src="https://via.placeholder.com/40"
+        alt="placeholder"
+        class="top-align"
+      />
+      aligned to the top.
+    </p>
+  </section>
+
+  <!-- ADVANCED EFFECTS -->
+  <section class="card">
+    <h2>Advanced Text Effects</h2>
+
+    <h3 class="stroke-text">Text Stroke Effect</h3>
+
+    <h3 class="shadow-text">
+      Shadow + Letter Spacing
+    </h3>
   </section>
 
 </body>
